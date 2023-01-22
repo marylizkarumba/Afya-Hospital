@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+/* NavBar Component */
+.hospital-logo{
+    color: #4200FF;
+}
+
+.sign-in{
+    border-radius: 10px;
+}
+
+
+/* Home Component CSS */
+.containerr{
+    margin-top: 5%;
+}
+
+.containerr .row1 .col1 p{
+    font-size: 48px;
+}
+
+.containerr .row1 .col1-1 p span{
+	color: #4200FF;
+}
+
+.more{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+	position: relative;
+    margin-top: 40px;
+}
+
+.more a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+	background-color: #4200FF;
+}
+
+.more a:hover{
+    background-color: #27ae60;
+}
+
+.more a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+.can-sign-up{
+	margin-top: 15%;
+}
+
+.can-sign-up label{
+    font-size: 15px;
+}
+
+.can-sign-up label a{
+	color: #4200FF;
+}
+
+.col2{
+	margin-left: 16%;
+	position: relative;
+}
+
+.col2 img{
+	height: 90%;
+}
+
+.search-doctors{
+	display: flex;
+	position: absolute;
+	top:40px;
+	left:-90px;
+    /* background-color: #fff; */
+	/* background: #321; */
+	color: #000;
+	border-radius: 15px;
+	padding: 10px 20px;
+}
+
+.search-doctors .search-icon{
+	width: 20px;
+	height: 20px;
+    display: flex;
+	font-size: 30px;
+}
+
+.search-doctors .search-text{
+	padding-left: 20px;
+}
+
+.book-doctors{
+	display: flex;
+	position: absolute;
+	top:290px;
+	left:-90px;
+    /* background-color: #fff; */
+	/* background: #321; */
+	color: #000;
+	border-radius: 15px;
+	padding: 10px 20px;
+}
+
+.book-doctors .book-icon{
+	width: 20px;
+	height: 20px;
+    display: flex;
+	font-size: 30px;
+}
+
+.book-doctors .book-text{
+	padding-left: 20px;
+}
+
+.call-doctors{
+	display: flex;
+	position: absolute;
+	top:400px;
+	left:250px;
+	/* background: #321; */
+	border-radius: 15px;
+	padding: 10px 20px;
+}
+
+.call-doctors .call-icon{
+	width: 20px;
+	height: 20px;
+    display: flex;
+	font-size: 30px;
+	color:#000;
+}
+
+.call-doctors .call-text{
+	padding-left: 20px;
+}
+
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+
+.row1{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+
+.row2{
+	float:none;
+	width:100%;
+}
+
+.row2 img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+
+/* .content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+
+.content-section .content .button{
+	text-align: center;
+}
+
+.content-section .content .button a{
+	padding:9px 30px;
+}
+
+.content-section .social{
+	text-align: center;
+} */
+
+}
+
+/* LogIn Form Component */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.containerr{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+    margin-top: 5%;
+}
+
+.containerr:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	/* background: url("https://images.pexels.com/photos/11198237/pexels-photo-11198237.jpeg?auto=compress&cs=tinysrgb&w=400") no-repeat center; */
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-boxx{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.lefty{
+	background: url("https://images.pexels.com/photos/11198237/pexels-photo-11198237.jpeg?auto=compress&cs=tinysrgb&w=400") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.righty{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #4200FF;
+}
+
+.field1{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field1:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn1{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #4200FF;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn1:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+.forgot{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.forgot a{
+    color: #4200FF;
+}
+
+.socials a{
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+/* Mediservices css */
+.medical-services-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	margin-bottom: 3%;
+}
+
+.medical-services-text h1{
+	font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.medical-services-text em{
+	font-size: 1.0rem;
+    font-weight: 300;
+}
+
+.service-cards{
+	display: flex;
+	/* margin-left: 18%; */
+}
+
+.mediservices{
+	display: flex;
+    justify-content: center;
+	align-items: center;
+    /* margin-bottom: 5%; */
+}
+
+.glassBox {
+	width: 100%;
+	height: 250px;
+	max-width: 300px;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.05);
+	-webkit-backdrop-filter: blur(2px);
+			backdrop-filter: blur(2px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-right-color: rgba(255, 255, 255, 0.1);
+	border-bottom-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.glassBox, .glassBox * {
+	box-sizing: border-box;
+	transition: 400ms;
+}
+.glassBox__imgBox img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.glassBox__title {
+	text-align: center;
+	margin-top: 15px;
+	color: #000;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: "Lato";
+}
+.glassBox:hover .glassBox__imgBox {
+	transform: translateY(-50px);
+}
+.glassBox:hover .glassBox__imgBox img {
+	transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
+}
+
+/* Login SignUp  */
+.reg-log-options{
+	display: flex;
+    justify-content: center;
+}
+
+/* Appointment form */
+.appoint-button{
+	background: #4200FF;
+}
+
+.appoint-button:hover{
+	background: #27ae60;
+}
+
+/* About Us Page  */
+.sectionn{
+	width: 100%;
+	min-height: 100vh;
+}
+
+.containerer{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+
+.content-section{
+	float: left;
+	width: 55%;
+}
+
+.image-section{
+	float: right;
+	width: 40%;
+}
+
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.content-section .content .button{
+	margin-top: 30px;
+}
+
+.content-section .content .button a{
+	/* background-color: #3d3d3d; */
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover{
+	/* background-color: #a52a2a; */
+	color:#fff;
+}
+
+.content-section .social{
+	margin: 40px 40px;
+}
+
+.content-section .social i{
+	/* color:#a52a2a; */
+	font-size: 30px;
+	padding:0px 10px;
+}
+
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+
+.image-section{
+	float:none;
+	width:100%;
+}
+
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+
+.content-section .content .button{
+	text-align: center;
+}
+
+.content-section .content .button a{
+	padding:9px 30px;
+}
+
+.content-section .social{
+	text-align: center;
+}
+
+}
